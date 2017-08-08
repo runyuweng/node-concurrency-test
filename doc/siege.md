@@ -24,7 +24,7 @@ Transactions:		         500 hits
 Availability:		      100.00 %
 
 //总花费时间
-Elapsed time:		       13.97 secs
+Elapsed time:		       13.97 secsv
 
 //传输数据总量
 Data transferred:	        0.02 MB

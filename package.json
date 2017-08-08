@@ -1,0 +1,20 @@
+{
+  "name": "concurrency-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node": "node ./node/cluster.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wengwengweng/node-concurrency-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wengwengweng/node-concurrency-test/issues"
+  },
+  "homepage": "https://github.com/wengwengweng/node-concurrency-test#readme"
+}

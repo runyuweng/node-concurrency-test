@@ -1,11 +1,12 @@
-var cluster = require('cluster');
+const cluster = require('cluster');
+const path = require('path');
 
 cluster.setupMaster({
-    exec: "node/app.js"
+    exec: path.join(__dirname,'/app.js')
 })
 
-var cpus = require('os').cpus();
-for(var i = 0; i < cpus.length; i++){
+const cpus = require('os').cpus();
+for(let i = 0; i < cpus.length; i++){
     cluster.fork();
 }
 

@@ -3,7 +3,7 @@
 Apache ab（osx自带）
 
 ## 准备工作
-- ulimit -n 1000 //设置当前最大可打开文件数
+- ulimit -n 1000  //设置当前最大可打开文件数
 - xxx
 
 ## 并发数量
@@ -36,39 +36,43 @@ Server Hostname:        127.0.0.1
 Server Port:            3000
 
 Document Path:          /
-Document Length:        11 bytes
+Document Length:        44 bytes
 
 Concurrency Level:      1000
-Time taken for tests:   0.235 seconds
+Time taken for tests:   0.255 seconds
 Complete requests:      1000
 Failed requests:        0
-Total transferred:      86000 bytes
-HTML transferred:       11000 bytes
-Requests per second:    4256.55 [#/sec] (mean)
-Time per request:       234.932 [ms] (mean)
-Time per request:       0.235 [ms] (mean, across all concurrent requests)
-Transfer rate:          357.48 [Kbytes/sec] received
+Total transferred:      119000 bytes
+HTML transferred:       44000 bytes
+Requests per second:    3918.80 [#/sec] (mean)
+Time per request:       255.180 [ms] (mean)
+Time per request:       0.255 [ms] (mean, across all concurrent requests)
+Transfer rate:          455.41 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:       20   39  23.2     31      98
-Processing:    81  112  15.5    107     155
-Waiting:       80  109  16.4    102     155
-Total:        131  150  15.9    146     197
+Connect:       13   24   7.3     23      37
+Processing:    34  111  47.0    113     205
+Waiting:       32  110  46.8    113     205
+Total:         71  134  39.9    135     219
 
 Percentage of the requests served within a certain time (ms)
-  50%    146
-  66%    151
-  75%    162
-  80%    168
-  90%    175
-  95%    181
-  98%    186
-  99%    189
- 100%    197 (longest request)
+  50%    135
+  66%    152
+  75%    165
+  80%    170
+  90%    195
+  95%    207
+  98%    212
+  99%    214
+ 100%    219 (longest request)
 ```
 
 ## Apache
+使用OSX自带的Apache
+```
+/Library/WebServer/Documents/index.html.en
+```
 ```
 This is ApacheBench, Version 2.3 <$Revision: 1757674 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
